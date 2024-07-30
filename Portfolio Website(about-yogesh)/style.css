@@ -515,3 +515,112 @@ footer .text span a:hover{
     color: #4070f4;
   }
 }
+
+
+
+
+
+/* Projects Section */
+.projects {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.projects .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.projects .title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects .project {
+  width: calc(33.33% - 20px); /* Adjust according to your design */
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projects .project:hover {
+  transform: translateY(-5px);
+}
+
+.projects .project img {
+  width: 100%;
+  height: auto;
+}
+
+.projects .project-details {
+  padding: 20px;
+}
+
+.projects .project-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projects .project-details p {
+  color: #777;
+}
+
+
+.projects .project-details a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.projects .project-details a:hover {
+  background-color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .projects .project {
+    width: calc(50% - 20px); /* Adjust according to your design */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects .project {
+    width: 100%;
+  }
+}
+
+.projects .project-details {
+  position: relative;
+}
+
+.projects .project-details .live-apps {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FF5733;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.projects .project-details {
+  position: relative;
+}
+
+.projects .project-details h3 {
+  margin-right: 80px; 
+}

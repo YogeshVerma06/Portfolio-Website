@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Contact with @YogeshVerma
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #ff502d;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+
+
+
+        /* For popup */
+		p {
+			font-size: 17px;
+			align-items: center;
+		}
+		/* .box a {
+			display: inline-block;
+			background-color: #fff;
+			padding: 15px;
+			border-radius: 3px;
+		} */
+		.modal {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba(254, 126, 126, 0.7);
+			transition: all 0.4s;
+			visibility: hidden;
+			opacity: 0;
+		}
+		.content {
+			position: absolute;
+			background: white;
+			width: 400px;
+			padding: 1em 2em;
+			border-radius: 4px;
+		}
+		.modal:target {
+			visibility: visible;
+			opacity: 1;
+		}
+		.box-close {
+			position: absolute;
+			top: 0;
+			right: 15px;
+			color: #fe0606;
+			text-decoration: none;
+			font-size: 30px;
+		}
+
+
+
+
+	</style>
+</head>
+
+<body>
+	<h1>Contact with @YogeshVerma
+    </h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Enter your Query
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			<!-- Submit  -->
+            <div class="box">
+                <a href="#popup-box">
+                    Submit
+                </a>
+            </div>
+
+
+		</button>
+	</form>
+
+</head>
+
+	<div id="popup-box" class="modal">
+		<div class="content">
+			<h1 style="color: green;">
+				Thank you .
+			</h1>
+			<b>
+				<p>~ @Yogesh</p>
+			</b>
+			<a href="#"
+			class="box-close">
+				×
+			</a>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+</body>
+</html>
