@@ -326,31 +326,84 @@
     </div>
   </section>
 
-  <!-- Contact Me section Start -->
-  <section class="contact" id="contact">
-    <div class="content">
 
-      <div class="title"><span>Contact Me</span></div>
-      <div class="text">
-
-        <div class="media-icons2">
-          <a href="https://github.com/YogeshVerma06"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/yogesh-kumar-babb981a0/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/itsyogesh_verma/" target="_blank"><i class="fab fa-instagram"></i> </a>
-        </div>
-
-        <div class="topic">Have Any Project?</div>
-        <p>if you have any Project So Contect me</p>
-        <div class="button">
-          <!-- <button>Let's Chat</button> -->
-          <button class="LetsChat" onclick="window.location.href = 'contectMe.html';">Lets Chat</onclick=>
-          </button>
-
-
-        </div>
+<!-- Contact Me section Start -->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title"><span>Contact Me</span></div>
+    <div class="text">
+      <div class="media-icons2">
+        <a href="https://github.com/YogeshVerma06"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yogesh-kumar-babb981a0/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/itsyogesh_verma/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="topic">Have Any Project?</div>
+      <p>If you have any project, contact me.</p>
+      <div class="button">
+        <button class="LetsChat" id="openFormBtn">Let's Chat</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Popup Form -->
+<div class="popup-form" id="popupForm">
+  <form id="projectForm" class="form-container">
+    <span class="close" id="closeFormBtn">&times;</span>
+    <h2>Contact Form</h2>
+
+    <div class="input-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="contactNumber">Contact Number:</label>
+      <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+      <small>Format: 1234567890</small>
+    </div>
+
+    <div class="input-group">
+      <label for="projectType">Project Type:</label>
+      <select id="projectType" name="projectType" required>
+        <option value="">Select Project Type</option>
+        <option value="Website">Website</option>
+        <option value="iOS App">iOS App</option>
+        <option value="Android App">Android App</option>
+        <option value="Both iOS and Android">Both iOS and Android</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="projectCategory">Project Category:</label>
+      <select id="projectCategory" name="projectCategory" required>
+        <option value="">Select Project Category</option>
+        <option value="Music Player">Music Player</option>
+        <option value="E-commerce">E-commerce</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Business">Business</option>
+        <option value="Other">Business</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="projectDescription">Project Description:</label>
+      <textarea id="projectDescription" name="projectDescription" rows="4" placeholder="Enter project requirements" required></textarea>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="btn submit-btn">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!-- Toast Message -->
+<div class="toast" id="toastMessage">Your request has been submitted.</div>
 
   <!-- Footer Section Start -->
   <footer>
